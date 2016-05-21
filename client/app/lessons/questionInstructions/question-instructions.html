@@ -43,7 +43,7 @@
 	        <div ng-bind-html="q.instructions"></div>
 
 	        <ul ng-show="hintRequested()" ng-repeat="hint in q.hints | limitTo: status[qInfo.currentQuestion - 1].hintIndex + 1">
-	        	<li><strong>Hint:</strong> <div style="white-space:pre-wrap;" ng-bind-html="hint"></div></li>
+	        	<li><strong>Hint:</strong> <div class="tab" style="white-space:pre-wrap;" ng-bind-html="hint"></div></li>
 	        </ul>	
 	        <p ng-if="hintRequested() && status[qInfo.currentQuestion - 1].hintIndex >= q.hints.length">{{noMoreHints}}</p>     
 	    
