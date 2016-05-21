@@ -178,7 +178,7 @@
                         		Add a hint to this question
                     		</button>                    		
                     		<div class="input-group" ng-repeat="hint in questionToEdit.hints track by $index">
-					  			<textarea ta-toolbar="pre" class="form-control" type="text" id="editHints" placeholder="Add hint {{$index + 1}} here." ng-model="questionToEdit.hints[$index]"></textarea>
+					  			<text-angular ta-toolbar="pre" class="form-control" type="text" id="editHints" placeholder="Add hint {{$index + 1}} here." ng-model="questionToEdit.hints[$index]"></text-angular>
 						  		<span class="input-group-btn">
 						  			<button type="button" class="close" data-toggle="tooltip" data-placement="top" title="Delete this hint." ng-click="deleteHintFromExistingQ($index)">&times;</button>
 						  		</span>
